@@ -11,6 +11,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 import { AppComponent } from './app.component';
 import { NewTaskComponent } from './features/new-task/new-task.component'; // <-- Add this line
@@ -32,7 +36,11 @@ import { NewTaskComponent } from './features/new-task/new-task.component'; // <-
     MatButtonModule,
     MatSelectModule,
     MatFormFieldModule,
-    MatMenuModule
+    MatMenuModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatSidenavModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
