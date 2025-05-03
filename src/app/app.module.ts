@@ -16,19 +16,24 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+
 
 
 import { AppComponent } from './app.component';
 import { NewTaskComponent } from './features/new-task/new-task.component';
 import { DashboardComponent } from './features/dashboard/dashboard.component';
-import { SettingsComponent } from './features/settings/settings.component'; // <-- Add this line
+import { SettingsComponent } from './features/settings/settings.component';
+import { AllTaskComponent } from './features/all-task/all-task.component'; // <-- Add this line
 
 @NgModule({
   declarations: [
     AppComponent,
     NewTaskComponent,
     DashboardComponent,
-    SettingsComponent
+    SettingsComponent,
+    AllTaskComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +52,9 @@ import { SettingsComponent } from './features/settings/settings.component'; // <
     MatIconModule,
     MatSidenavModule,
     MatDividerModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatNativeDateModule,
+    MatDatepickerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

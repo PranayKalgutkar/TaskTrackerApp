@@ -8,62 +8,20 @@ mat-sidenav {
     width: 200px;
     border-right: none;
     background: #002b5c;
-    /* background: #FAFAFA; */
-    /* color: black; */
     color: white;
     border-radius: 10px;
     padding: 16px;
     text-align: center;
 }
 
-.content {
-    height: calc(100vh - 130px);
-    border-radius: 10px;
-    margin: 16px;
-    margin-left: 32px;
-
-    padding: 16px;
-
-    overflow: auto;
+mat-divider {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 mat-sidenav-container {
     height: calc(100vh - 65px);
-}
-
-.menu-button {
-    /* background-color: white; */
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    /* font-size: 5rem; */
-    font-weight: normal;
-    margin-bottom: 10px;
-
-    mat-icon {
-        margin-right: 15px;
-    }
-}
-
-.active-menu-item {
-    background-color: rgba(255, 255, 255, 0.2);
-    border-left: 4px solid #ffd54f; /* yellow accent or change to your brand color */
-    border-radius: 4px;
-    font-weight: bold;
-  }
-  
-  .active-submenu-item {
-    background-color: rgba(255, 255, 255, 0.15);
-    border-left: 4px solid #ffd54f; /* light blue or change to your brand color */
-    border-radius: 4px;
-    font-weight: bold;
-  }
-  
-
-.selected-menu-item {
-    border-left-color: red;
-    background: rgba(0, 0, 0, 0.05);
 }
 
 .avatar {
@@ -84,31 +42,47 @@ mat-sidenav-container {
     color: lightgrey;
 }
 
-mat-divider {
-    margin-top: 16px;
-    margin-bottom: 16px;
-    background-color: rgba(255, 255, 255, 0.5);
+.content {
+    height: calc(100vh - 130px);
+    border-radius: 10px;
+    margin: 16px;
+    margin-left: 32px;
+    padding: 16px;
+    overflow: auto;
 }
 
-/* NESTED SUB MENU */
+.menu-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1rem;
+    font-weight: normal;
+    margin-bottom: 10px;
+    border-left: 4px solid transparent; /* Reserve space */
+
+    mat-icon {
+        margin-right: 20px;
+    }
+}
+
+.active-menu-item {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-left: 4px solid #ffd54f;
+}
 
 .menu-group {
     width: 100%;
 }
 
-/* Submenu container aligned with parent */
 .submenu {
-    /* background-color: aqua; */
     padding-left: 24px;
-    /* adjust as needed */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    /* aligns to start, not right side */
     gap: 0.5px;
 }
 
-/* Style submenu buttons to align like parent */
 .submenu-button {
     width: 100%;
     display: flex;
@@ -117,46 +91,18 @@ mat-divider {
     text-align: left;
     font-weight: normal;
     margin-bottom: 10px;
+    border-left: 4px solid transparent; /* Reserve space */
 
     mat-icon {
         margin-right: 15px;
     }
 }
 
-/* Adjust main menu button to behave consistently */
-.menu-button {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    font-size: 1rem;
-    text-align: left;
+.active-submenu-item {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-left: 4px solid #ffd54f;
 }
 
-/* Optional: keep expand icon pushed to the right */
 .expand-icon {
     margin-left: auto;
 }
-
-
-/* .menu-group {
-    width: 100%;
-  }
-  
-  .submenu {
-    margin-left: 32px;
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-  }
-  
-  .submenu-button {
-    justify-content: flex-start;
-    width: 100%;
-    font-size: 0.9rem;
-  }
-  
-  .expand-icon {
-    margin-left: auto;
-  }
-   */
