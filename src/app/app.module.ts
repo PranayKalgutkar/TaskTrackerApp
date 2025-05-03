@@ -15,14 +15,20 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatExpansionModule } from '@angular/material/expansion';
+
 
 import { AppComponent } from './app.component';
-import { NewTaskComponent } from './features/new-task/new-task.component'; // <-- Add this line
+import { NewTaskComponent } from './features/new-task/new-task.component';
+import { DashboardComponent } from './features/dashboard/dashboard.component';
+import { SettingsComponent } from './features/settings/settings.component'; // <-- Add this line
 
 @NgModule({
   declarations: [
     AppComponent,
-    NewTaskComponent
+    NewTaskComponent,
+    DashboardComponent,
+    SettingsComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +46,8 @@ import { NewTaskComponent } from './features/new-task/new-task.component'; // <-
     MatToolbarModule,
     MatIconModule,
     MatSidenavModule,
-    MatDividerModule
+    MatDividerModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

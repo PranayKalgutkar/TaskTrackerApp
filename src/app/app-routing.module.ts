@@ -2,9 +2,25 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { NewTaskComponent } from '../app/features/new-task/new-task.component';
+import { DashboardComponent } from '../app/features/dashboard/dashboard.component';
+import { SettingsComponent } from '../app/features/settings/settings.component';
 
 const routes: Routes = [
-  { path: 'new-task', component: NewTaskComponent }
+  {
+    path: '',
+    pathMatch: 'full',
+    redirectTo: 'dashboard'
+  },
+  {
+    path: 'dashboard',
+    component : DashboardComponent
+  },
+  { path: 'new-task', 
+    component: NewTaskComponent 
+  },
+  { path: 'settings', 
+    component: SettingsComponent 
+  },
 ];
 
 @NgModule({
